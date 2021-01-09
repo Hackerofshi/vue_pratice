@@ -5,7 +5,7 @@ import MainPage from "@/components/MainPage";
 import LoginPage from "@/views/login/index";
 import TaskPage from "@/views/main/index";
 import HomePage from "@/views/home/index";
-
+import HomeDetail from "@/views/home/detail/index";
 Vue.use(Router);
 
 const routes = [
@@ -33,6 +33,12 @@ const routes = [
     path: "/home",
     name: "HomePage",
     component: HomePage
+  }
+  ,
+  {
+    path: "/homedetail",
+    name: "HomeDetail",
+    component: HomeDetail
   }
 ];
 

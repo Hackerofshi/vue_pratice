@@ -45,6 +45,7 @@
       <div class="d2">
         <Item
           v-for="item in items"
+
           :key="item.message"
           v-bind:content="item.message"
         ></Item>
@@ -86,9 +87,9 @@ export default {
       items: [
         { message: "Foo" },
         { message: "Bar" },
-        { message: "Bar" },
-        { message: "Bar" },
-        { message: "Bar" },
+        { message: "Bar1" },
+        { message: "Bar2" },
+        { message: "Bar3" },
       ],
     };
   },
@@ -96,6 +97,7 @@ export default {
     press() {
       console.log(this.$data.a);
     },
+
     showMessage1: function () {
       setTimeout(function () {
         //这里是window

@@ -1,5 +1,5 @@
 <template>
-  <div class="item">
+  <div v-on:click="jump" class="item">
     <img class="itemImg" src="../../assets/logo.png" />
     <span>{{ content }}</span>
     <span>2020-01-09 09</span>
@@ -9,6 +9,12 @@
 export default {
   props: {
     content: String,
+  },
+  methods: {
+    jump() {
+      console.log(this.$data.a);
+      this.$router.push("homedetail");
+    },
   },
 };
 </script>

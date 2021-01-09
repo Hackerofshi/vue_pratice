@@ -9,11 +9,10 @@
         <el-button v-on:click="press1" class="button-type">登录页面</el-button>
 
         <el-button v-on:click="press2" type="danger" plain class="button-type"
-          >任务按钮</el-button
+          >task页面</el-button
         >
-
         <el-button v-on:click="press3" type="info" plain class="button-type"
-          >危险按钮</el-button
+          >主页面</el-button
         >
       </el-col>
     </div>

@@ -43,7 +43,7 @@
         <p id="id1"></p>
       </div>
       <div class="d2">
-        <Item v-for="item in items" :key="item.message" content="bbb" ></Item>
+        <Item v-for="item in items" :key="item.message" v-bind:content="item.message" ></Item>
       </div>
       <div class="d1"></div>
     </el-main>
@@ -143,19 +143,6 @@ export default {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    .item {
-      display: flex;
-      margin-left: 10px;
-      margin-right: 10px;
-      margin-top: 10px;
-      width: 32%;
-      flex-direction: column;
-      align-items: center;
-      background-color: burlywood;
-      .itmeImg {
-        width: 100%;
-      }
-    }
   }
 }
 </style>

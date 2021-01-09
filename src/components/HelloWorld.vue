@@ -8,9 +8,13 @@
 
         <el-button v-on:click="press1" class="button-type">登录页面</el-button>
 
-        <el-button v-on:click="press2" type="danger" plain class="button-type">任务按钮</el-button>
+        <el-button v-on:click="press2" type="danger" plain class="button-type"
+          >任务按钮</el-button
+        >
 
-        <el-button v-on:click="press3" type="info" plain class="button-type">危险按钮</el-button>
+        <el-button v-on:click="press3" type="info" plain class="button-type"
+          >危险按钮</el-button
+        >
       </el-col>
     </div>
   </div>
@@ -22,7 +26,7 @@ export default {
   data() {
     return {
       msg: "Welcome to Your Vue.js App",
-      title: "you are so great"
+      title: "you are so great",
     };
   },
   methods: {
@@ -37,8 +41,8 @@ export default {
     },
     press3() {
       this.$router.push("/home");
-    }
-  }
+    },
+  },
 };
 </script>
 

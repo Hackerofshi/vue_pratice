@@ -1,14 +1,15 @@
 <template>
   <div class="item">
     <img class="itemImg" src="../../assets/logo.png" />
-    <span>{{content}}</span>
+    <span>{{ content }}</span>
+    <span>2020-01-09 09</span>
   </div>
 </template>
 <script>
 export default {
   props: {
-    content: String
-  }
+    content: String,
+  },
 };
 </script>
 <style lang="less"  scoped>

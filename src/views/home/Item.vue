@@ -18,7 +18,7 @@ export default {
   margin-left: 10px;
   margin-right: 10px;
   margin-top: 10px;
-  width: 32%;
+  width: 31%;
   flex-direction: column;
   align-items: center;
   background-color: burlywood;

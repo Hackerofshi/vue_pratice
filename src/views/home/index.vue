@@ -40,12 +40,19 @@
     </el-header>
     <el-main class="main">
       <div class="d1">
-        <p id="id1"></p>
+        <img class="imgTop" src="../../assets/icon_bg.png" />
       </div>
       <div class="d2">
-        <Item v-for="item in items" :key="item.message" v-bind:content="item.message" ></Item>
+        <Item
+          v-for="item in items"
+          :key="item.message"
+          v-bind:content="item.message"
+        ></Item>
       </div>
       <div class="d1"></div>
+      <div class="d4">
+        <span class="text">© copyright 2016IPIM. All rights reserved. (聲明)</span>
+      </div>
     </el-main>
   </el-container>
 </template>
@@ -63,26 +70,26 @@ export default {
         { message: "Bar" },
         { message: "Bar" },
         { message: "Bar" },
-        { message: "Bar" }
-      ]
+        { message: "Bar" },
+      ],
     };
   },
   methods: {
     press() {
       console.log(this.$data.a);
     },
-    showMessage1: function() {
-      setTimeout(function() {
+    showMessage1: function () {
+      setTimeout(function () {
         //这里是window
         document.getElementById("id1").innerText = this.message;
       }, 10);
     },
-    showMessage2: function() {
+    showMessage2: function () {
       setTimeout(() => {
         document.getElementById("id2").innerText = this.message; //this 4
       }, 10);
-    }
-  }
+    },
+  },
 };
 </script>
 
@@ -137,12 +144,31 @@ export default {
   .d1 {
     height: 465px;
     background-color: brown;
+    .imgTop {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
   }
   .d2 {
-    background-color: blueviolet;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    padding-bottom: 10px;
+  }
+  .d3 {
+    display: flex;
+  }
+  .d4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    background-color: black;
+    .text{
+      color: white;
+    }
   }
 }
 </style>

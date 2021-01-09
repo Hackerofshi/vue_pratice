@@ -21,7 +21,6 @@ export default {
   width: 31%;
   flex-direction: column;
   align-items: center;
-  background-color: burlywood;
   .itmeImg {
     width: 100%;
   }

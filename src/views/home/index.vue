@@ -50,8 +50,26 @@
         ></Item>
       </div>
       <div class="d1"></div>
+      <div class="d3">
+        <div class="item1">
+          <img class="icon" src="../../assets/logo.png" />
+          <div class="itemcontent">
+            <span class="contenttext">澳门贸促局 </span>
+            <span class="text">http://www.mice.gov.mo/tc/ </span>
+          </div>
+        </div>
+        <div class="item2">
+          <div class="itemcontent">
+            <span class="contenttext">澳门贸促局 </span>
+            <span class="text">http://www.mice.gov.mo/tc/ </span>
+            <span class="text">http://www.mice.gov.mo/tc/ </span>
+          </div>
+        </div>
+      </div>
       <div class="d4">
-        <span class="text">© copyright 2016IPIM. All rights reserved. (聲明)</span>
+        <span class="text"
+          >© copyright 2016IPIM. All rights reserved. (聲明)
+        </span>
       </div>
     </el-main>
   </el-container>
@@ -159,6 +177,41 @@ export default {
   }
   .d3 {
     display: flex;
+    height: 247px;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    .item1 {
+      display: flex;
+      flex-direction: row;
+      margin-left: 137px;
+      .icon {
+        height: 80px;
+        width: 80px;
+      }
+      .itemcontent {
+        margin-left: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        .contenttext {
+          font-size: 28px;
+        }
+      }
+    }
+    .item2 {
+      display: flex;
+      flex-direction: row;
+      margin-right: 137px;
+      .itemcontent {
+        margin-left: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
   }
   .d4 {
     display: flex;
@@ -166,7 +219,7 @@ export default {
     justify-content: center;
     height: 100px;
     background-color: black;
-    .text{
+    .text {
       color: white;
     }
   }

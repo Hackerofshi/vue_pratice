@@ -7,6 +7,7 @@
         <el-button type="danger" plain class="button-type">主页面</el-button>
         <el-button type="danger" plain class="button-type">主页面</el-button>
         <el-button type="danger" plain class="button-type">主页面</el-button>
+        <el-button type="danger" plain class="button-type">主页面</el-button>
       </div>
     </div>
     <div class="spaceline"></div>

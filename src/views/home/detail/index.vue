@@ -9,7 +9,7 @@
           </div>
         </div>
         <div class="item2">
-          <span>ffff</span>
+          <span class="s1">按钮</span>
         </div>
       </div>
       <div class="topitem2">
@@ -121,6 +121,7 @@ export default {
         .itemcontent1 {
           display: flex;
           flex-direction: column;
+          
           height: 255px;
         }
       }
@@ -129,6 +130,16 @@ export default {
         flex-direction: column;
         padding-right: 100px;
         justify-content: flex-end;
+        .s1 {
+          text-align: center;
+          color: white;
+          background-color: red;
+          width: 100px;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          border-radius: 5px;
+          display:block
+        }
       }
     }
     .topitem2 {

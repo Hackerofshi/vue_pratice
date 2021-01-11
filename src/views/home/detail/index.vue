@@ -1,13 +1,23 @@
 <template>
   <div class="maincontainer">
     <div class="topcontainer">
-      <div v-bind:class="[activeClass, errorClass]"></div>
+      <div class="active">
+        <div class="item1">
+          <img class="imghead" src="../../../assets/icon_launcher.jpg" />
+          <div class="itemcontent1">
+            <span>ffff</span>
+          </div>
+        </div>
+        <div class="item2">
+          <span>ffff</span>
+        </div>
+      </div>
       <div class="topitem2">
-        <el-button type="danger" plain class="button-type">主页面</el-button>
-        <el-button type="danger" plain class="button-type">主页面</el-button>
-        <el-button type="danger" plain class="button-type">主页面</el-button>
-        <el-button type="danger" plain class="button-type">主页面</el-button>
-        <el-button type="danger" plain class="button-type">主页面</el-button>
+        <el-button type="danger" plain class="button-type">主页面1</el-button>
+        <el-button type="danger" plain class="button-type">主页面2</el-button>
+        <el-button type="danger" plain class="button-type">主页面3</el-button>
+        <el-button type="danger" plain class="button-type">主页面4</el-button>
+        <el-button type="danger" plain class="button-type">主页面5</el-button>
       </div>
     </div>
     <div class="spaceline"></div>
@@ -90,8 +100,36 @@ export default {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
     .active {
-      background-color: green;
+      padding-left: 100px;
+      display: flex;
+      flex: 1;
+      flex-direction: row;
+      justify-content: space-between;
+      .item1 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        .imghead {
+          height: 255px;
+          width: 153px;
+          object-fit: cover;
+          object-position: center;
+        }
+        .itemcontent1 {
+          display: flex;
+          flex-direction: column;
+          height: 255px;
+        }
+      }
+      .item2 {
+        display: flex;
+        flex-direction: column;
+        padding-right: 100px;
+        justify-content: flex-end;
+      }
     }
     .topitem2 {
       padding-left: 100px;
@@ -108,7 +146,7 @@ export default {
   .topitem3 {
     display: flex;
     flex-direction: row;
-    padding-left: 30px;
+    padding-left: 100px;
   }
 }
 </style>

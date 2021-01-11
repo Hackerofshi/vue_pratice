@@ -15,13 +15,11 @@ const actions = {
     });
     commit("SET_WORK_FLOW_LIST", { data: res.data, total: res.total });
   },
-
   GET_PROCESSED_WORK_FLOW_LIST: async ({ commit }, payload) => {
     const res = await api.workFlow.getProcessedWorkflowList({
       ...payload,
       pageSize: 10
     });
-
     commit("SET_WORK_FLOW_LIST", { data: res.data, total: res.total });
   }
 };

@@ -55,7 +55,7 @@
       <div style="width:20px"></div>
       <!-- 解构插槽 -->
       <ItemScopeSlot>
-        <!-- // 这里采用解构的写法，类比之前`v-slot:person="slotPersonProps"` 相当于从slotPersonProps对象中解构出cpnperson属性 -->
+        <!--这里采用解构的写法，类比之前`v-slot:person="slotPersonProps"` 相当于从slotPersonProps对象中解构出cpnperson属性 -->
         <template v-slot:person="{cpnperson}">
           <p>{{ cpnperson }}</p>
         </template>

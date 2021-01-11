@@ -15,7 +15,11 @@ const actions = {
       commit("SET_LOGIN_FAIL");
     }
     return Promise.resolve(res.success);
-  }
+  },
+  GET_BACKGROUND_URL: async () => {
+    const res = await api.auth.getBackgroundUrl()
+    return Promise.resolve(res)
+},
 };
 
 const mutations = {

@@ -1,5 +1,5 @@
 <template>
-  <div class="login-wrapper">
+  <div class="login-wrapper" :style="`background-image:url('${bgUrl}')`">
     <div class="container">
       <div class="title">格力绩效管理系统</div>
       <el-form class="myForm" :model="userForm" ref="login" :rules="userRules">
@@ -39,6 +39,7 @@ export default {
     return {
       loading: false,
       autoLogin: true,
+      bgUrl: "",
       userForm: {
         username: "",
         password: ""
@@ -60,11 +61,21 @@ export default {
         if (valid) {
           this.login = true;
           await this.$store.dispatch("LOGIN", body);
-
-
         }
       });
+    },
+    /**
+     * 获取背景图片
+     */
+    async getBackgroundUrl() {
+      const res = await this.$store.dispatch("GET_BACKGROUND_URL");
+      if (res.success) {
+        this.bgUrl = res.data.kvalue;
+      }
     }
+  },
+  mounted(){
+     this.getBackgroundUrl()
   }
 };
 </script>

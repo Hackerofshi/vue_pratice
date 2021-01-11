@@ -7,7 +7,7 @@ export const BASE_URL = process.env.NODE_ENV === 'development' ? '/api' : '/api'
 export const UPLOAD_BASE_URL = process.env.NODE_ENV === 'development' ? '/api/dfs/upload' : '/api/dfs/upload'
 
 export const instance = axios.create({
-    baseURL: 'http://192.168.10.89:9666/api',
+    baseURL: 'http://gree-gateway.native.wwu0.com:12380',
     timeout: 1200000,
     headers: {
         'Content-Type': 'application/json',

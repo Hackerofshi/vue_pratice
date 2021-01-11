@@ -43,9 +43,11 @@
         <img class="imgTop" src="../../assets/icon_bg.png" />
       </div>
       <div class="d2">
+        <!--父组件监听子组件触发的say方法，调用自己的parentSay方法-->
+        <!--通过:msg将父组件的数据传递给子组件-->
         <Item
           v-for="item in items"
-
+          @say="parentSay"
           :key="item.message"
           v-bind:content="item.message"
         ></Item>
@@ -55,22 +57,20 @@
         <div class="item1">
           <img class="icon" src="../../assets/logo.png" />
           <div class="itemcontent">
-            <span class="contenttext">澳门贸促局 </span>
-            <span class="text">http://www.mice.gov.mo/tc/ </span>
+            <span class="contenttext">澳门贸促局</span>
+            <span class="text">http://www.mice.gov.mo/tc/</span>
           </div>
         </div>
         <div class="item2">
           <div class="itemcontent">
-            <span class="contenttext">澳门贸促局 </span>
-            <span class="text">http://www.mice.gov.mo/tc/ </span>
-            <span class="text">http://www.mice.gov.mo/tc/ </span>
+            <span class="contenttext">澳门贸促局</span>
+            <span class="text">http://www.mice.gov.mo/tc/</span>
+            <span class="text">http://www.mice.gov.mo/tc/</span>
           </div>
         </div>
       </div>
       <div class="d4">
-        <span class="text"
-          >© copyright 2016IPIM. All rights reserved. (聲明)
-        </span>
+        <span class="text">© copyright 2016IPIM. All rights reserved. (聲明)</span>
       </div>
     </el-main>
   </el-container>
@@ -89,8 +89,8 @@ export default {
         { message: "Bar" },
         { message: "Bar1" },
         { message: "Bar2" },
-        { message: "Bar3" },
-      ],
+        { message: "Bar3" }
+      ]
     };
   },
   methods: {
@@ -98,18 +98,22 @@ export default {
       console.log(this.$data.a);
     },
 
-    showMessage1: function () {
-      setTimeout(function () {
+    showMessage1: function() {
+      setTimeout(function() {
         //这里是window
         document.getElementById("id1").innerText = this.message;
       }, 10);
     },
-    showMessage2: function () {
+    showMessage2: function() {
       setTimeout(() => {
         document.getElementById("id2").innerText = this.message; //this 4
       }, 10);
     },
-  },
+    // 参数就是子组件传递出来的数据
+    parentSay(msg) {
+      console.log(msg); // hello, parent
+    }
+  }
 };
 </script>
 

@@ -6,9 +6,12 @@ import router from './router'
 import ElementUI from 'element-ui'
 import store from './store'
 import JSEncrypt from '@/common/jsencrypt'
+import Toast from '@/common/toast'
 
 Vue.config.productionTip = false
 Vue.prototype.$encrypt = JSEncrypt
+Vue.prototype.$toast = Toast
+
 
 Vue.use(ElementUI)
 

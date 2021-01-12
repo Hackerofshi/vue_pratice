@@ -1,10 +1,10 @@
 <template>
   <div class="container1">
-    <div class="header">标题</div>
+    <div class="header">这是一个侧边栏</div>
     <div class="main">
       <el-button @click="drawer = true">默认按钮</el-button>
     </div>
-    <div class="footer">lll</div>
+    <div class="footer"></div>
 
     <el-drawer title="表单" :visible.sync="drawer" :direction="direction" :before-close="handleClose">
       <div class="contanierForm">
@@ -63,6 +63,7 @@
 </template>
 
 <script>
+import Toast from '@/common/toast'
 export default {
   data() {
     return {
@@ -89,8 +90,9 @@ export default {
         })
         .catch(_ => {});
     },
-    onsubmit() {
-      
+    onSubmit() {
+      console.log("0---->")
+      Toast("提交成功");
     }
   }
 };
@@ -114,6 +116,7 @@ export default {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #333;
   }
   .main {
     flex: 1;

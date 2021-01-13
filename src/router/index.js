@@ -6,6 +6,7 @@ import LoginPage from "@/views/login/index";
 import TaskPage from "@/views/main/index";
 import HomePage from "@/views/home/index";
 import HomeDetail from "@/views/home/detail/index";
+import FishGuide from "@/views/fish/guide/index";
 Vue.use(Router);
 
 const routes = [
@@ -39,6 +40,12 @@ const routes = [
     path: "/homedetail",
     name: "HomeDetail",
     component: HomeDetail
+  }
+  ,
+  {
+    path: "/FishGuide",
+    name: "FishGuide",
+    component: FishGuide
   }
 ];
 

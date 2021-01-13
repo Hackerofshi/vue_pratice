@@ -9,6 +9,7 @@
         <el-button v-on:click="press2" type="danger" class="button-type">task页面</el-button>
         <el-button v-on:click="press3" type="info" class="button-type">主页面</el-button>
         <el-button v-on:click="open" type="info" class="button-type">弹窗</el-button>
+        <el-button v-on:click="jumpFish" class="button-type">渔业</el-button>
       </el-col>
     </div>
   </div>
@@ -35,6 +36,9 @@ export default {
     },
     press3() {
       this.$router.push("/home");
+    },
+    jumpFish() {
+      this.$router.push("/FishGuide");
     },
     open() {
       this.$alert("这是一段内容", "标题名称", {

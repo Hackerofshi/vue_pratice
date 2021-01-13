@@ -3,7 +3,7 @@
     <span class="textStyle">请选择您的身份</span>
     <span>我们会对每种身份设定合理的鱼塘权限</span>
 
-    <div class="content">
+    <div class="content" @click="jump">
       <div class="fishitem">
         <img class="imgcontent" src="../../../assets/fish_farmer.png" />
         <div class="textcontent">
@@ -12,14 +12,14 @@
         </div>
       </div>
       <div class="fishitem">
-        <img class="imgcontent" src="../../../assets/fish_farmer.png" />
+        <img class="imgcontent" src="../../../assets/technician.png" />
         <div class="textcontent">
           <span class="text1">请选择您的身份</span>
           <span>实时监测鱼塘养殖情况</span>
         </div>
       </div>
       <div class="fishitem">
-        <img class="imgcontent" src="../../../assets/fish_farmer.png" />
+        <img class="imgcontent" src="../../../assets/manager.png" />
         <div class="textcontent">
           <span class="text1">请选择您的身份</span>
           <span>实时监测鱼塘养殖情况</span>
@@ -38,7 +38,13 @@ import { Image as VanImage } from "vant";
 
 Vue.use(VanImage);
 Vue.use(Card);
-export default {};
+export default {
+  methods :{
+    jump(){
+      this.$router.push("/FishLogin")
+    }
+  }
+};
 </script>
 <style lang="less" scoped>
 .container {
@@ -68,11 +74,11 @@ export default {};
     margin-top: 12px;
     margin-bottom: 50px;
     .fishitem {
+      height: 120px;
       border-radius: 8px;
       display: flex;
       margin-top: 24px;
       background-color: #eeeff3;
-      flex: 1;
       flex-direction: row;
       justify-content: center;
       align-items: center;

@@ -57,7 +57,7 @@ export default {
   },
   methods: {
     onSubmit(values) {
-      console.log("submit", values);
+      this.$router.push("/FishHomePage");
     },
     change() {
       console.log(this.username);

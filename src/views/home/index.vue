@@ -57,7 +57,7 @@
         <div class="item1">
           <img class="icon" src="../../assets/logo.png" />
           <div class="itemcontent">
-            <span class="contenttext">澳门贸促局</span>
+            <span class="contenttext">澳门的贸促局</span>
             <span class="text">http://www.mice.gov.mo/tc/</span>
           </div>
         </div>

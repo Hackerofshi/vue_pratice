@@ -1,10 +1,20 @@
 <template>
   <div class="container">
-    <span>指导页面</span>
   </div>
 </template>
 <script>
-export default {};
+import Vue from "vue";
+import { NavBar } from "vant";
+import "vant/lib/nav-bar/style";
+Vue.use(NavBar);
+export default {
+    methods: {
+    onClickLeft() {
+    },
+    onClickRight() {
+    },
+  },
+};
 </script>
 <style lang="less" scoped>
 .container {

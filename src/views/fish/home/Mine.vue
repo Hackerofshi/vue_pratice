@@ -1,6 +1,5 @@
 <template>
   <div class="container">
-    <span>我的页面</span>
   </div>
 </template>
 <script>

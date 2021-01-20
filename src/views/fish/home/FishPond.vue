@@ -5,7 +5,7 @@
     </div>
     <div class="tip">
       <div class="left">养殖指导</div>
-      <div class="right">养殖指导</div>
+      <div class="right">养殖告警</div>
     </div>
     <div class="tag">
       <span class="s">我的鱼塘</span>
@@ -14,14 +14,10 @@
 </template>
 <script>
 export default {
-  data(){
-    return {
-
-    }
+  data() {
+    return {};
   },
-  methods:{
-
-  }
+  methods: {}
 };
 </script>
 <style lang="less" scoped>
@@ -65,6 +61,10 @@ export default {
       display: flex;
       align-items: center;
       justify-content: center;
+      background: url("../../../assets/guide_card.png") no-repeat center;
+      margin-left: 20px;
+      margin-right: 10px;
+      color: white;
     }
     .right {
       flex: 1;
@@ -72,6 +72,10 @@ export default {
       display: flex;
       align-items: center;
       justify-content: center;
+      margin-left: 10px;
+      margin-right: 20px;
+      background: url("../../../assets/warn_card.png") no-repeat center;
+      color: white;
     }
   }
 }

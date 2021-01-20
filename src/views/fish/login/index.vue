@@ -69,12 +69,10 @@ export default {
 <style lang="less" scoped>
 .container {
   display: flex;
-  height: 100%;
+  height: 100vw;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: flex-start;
-  padding-right: 24px;
-  padding-left: 24px;
   .textStyle {
     margin-top: 50px;
     font-size: 30px;
@@ -89,7 +87,7 @@ export default {
 
   .container1 {
     display: flex;
-    width: 100%;
+    width: calc(100% - 48px);
     .formcontainer {
       margin-top: 70px;
       flex: 1;

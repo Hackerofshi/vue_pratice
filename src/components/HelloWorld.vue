@@ -38,7 +38,7 @@ export default {
       this.$router.push("/home");
     },
     jumpFish() {
-      this.$router.push("/FishGuide");
+      this.$router.push("/Guide");
     },
     open() {
       this.$alert("这是一段内容", "标题名称", {

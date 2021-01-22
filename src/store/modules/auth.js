@@ -1,5 +1,5 @@
 import api from "../../net/api";
-import toast from "../../common/toast"
+import toast from "../../common/toast";
 const state = {
   isLogin: false,
   userInfo: {},
@@ -17,9 +17,9 @@ const actions = {
     return Promise.resolve(res.success);
   },
   GET_BACKGROUND_URL: async () => {
-    const res = await api.auth.getBackgroundUrl()
-    return Promise.resolve(res)
-},
+    const res = await api.auth.getBackgroundUrl();
+    return Promise.resolve(res);
+  }
 };
 
 const mutations = {

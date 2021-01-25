@@ -42,6 +42,7 @@ import { Form } from "vant";
 import { Button } from "vant";
 import { Field } from "vant";
 
+import "vant/lib/form/style";
 import "vant/lib/button/style";
 import "vant/lib/field/style";
 
@@ -113,12 +114,10 @@ export default {
   }
 
   .bottomimgcontainer {
-    flex: 1;
     position: fixed;
     bottom: 0;
     right: 0;
-    align-items: flex-end;
-    flex-direction: row-reverse;
+    height: 184px;
   }
 }
 </style>

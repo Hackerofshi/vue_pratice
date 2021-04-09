@@ -13,7 +13,7 @@ import FishPond from "@/views/fish/home/FishPond";
 import FishGuide from "@/views/fish/home/FishGuide";
 import FishMessage from "@/views/fish/home/FishMessage";
 import Mine from "@/views/fish/home/Mine";
-import SyncFile from "@/views/promise/SyncFile";
+//import SyncFile from "@/views/demo/promise/SyncFile";
 Vue.use(Router);
 
 const routes = [
@@ -57,11 +57,11 @@ const routes = [
     name: "FishLogin",
     component: FishLogin
   },
-  {
-    path: "/SyncFile",
-    name: "SyncFile",
-    component: SyncFile
-  },
+  // {
+  //   path: "/SyncFile",
+  //   name: "SyncFile",
+  //   component: SyncFile
+  // },
   {
     path: "/FishHomePage",
     name: "FishHomePage",
